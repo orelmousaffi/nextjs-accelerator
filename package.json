@@ -1,0 +1,54 @@
+{
+  "name": "nextjs-fullstack-app-template",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=18.17.0",
+    "yarn": "please-use-npm",
+    "npm": ">=9.6.7"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "vitest",
+    "lint": "next lint",
+    "prettier": "prettier --write .",
+    "prepare": "husky install",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@storybook/addon-essentials": "^7.6.4",
+    "@storybook/addon-interactions": "^7.6.4",
+    "@storybook/addon-links": "^7.6.4",
+    "@storybook/addon-onboarding": "^1.0.10",
+    "@storybook/blocks": "^7.6.4",
+    "@storybook/nextjs": "^7.6.4",
+    "@storybook/react": "^7.6.4",
+    "@storybook/test": "^7.6.4",
+    "@testing-library/react": "^14.1.2",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-storybook": "^0.6.15",
+    "happy-dom": "^12.10.3",
+    "husky": "^8.0.3",
+    "prettier": "^3.1.1",
+    "storybook": "^7.6.4",
+    "typescript": "^5",
+    "vitest": "^1.1.0"
+  }
+}
