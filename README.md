@@ -48,7 +48,7 @@ Document any business specific components here...
 
 The repository is set up to utilize the [Dev - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension for an easy and efficient development environment set up. Follow the steps below to setup the Docker container.
 
-## First Time Setup
+### First Time Setup
 
 1. Make sure that the [Dev - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension is installed on VSCode.
 2. Open the root directory of the project in VSCode.
@@ -59,7 +59,7 @@ The repository is set up to utilize the [Dev - Containers](https://marketplace.v
 7. When the `npm` dependencies are complete, Open a new terminal window and run `npm run dev`
 8. The application should be running on `localhost:3000`
 
-## Launch Existing Container
+### Launch Existing Container
 
 If you have already setup the Docker container previously, then the only requirement is to run `Dev Containers: Reopen in Container` command from the Command Palette. This will open the workspace in VS Code. From here you can continue working as if on the host machine.
 
