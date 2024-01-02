@@ -5,6 +5,12 @@
 
 echo Building all app dependencies:
 
-npm ci --verbose 
+npm ci --verbose
+
+git config --global --add safe.directory /nextjs-accelerator-workspace
+
+# Allow self-signing certificate for this repository
+# For proper project use, an SSH certificate will be used
+git config http.sslVerify false
 
 exit
