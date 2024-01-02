@@ -50,5 +50,10 @@
     "storybook": "^7.6.4",
     "typescript": "^5",
     "vitest": "^1.1.0"
+  },
+  "overrides": {
+    "@storybook/nextjs": {
+      "sharp": "0.33.1"
+    }
   }
 }
