@@ -57,7 +57,7 @@ The repository is set up to utilize the [Dev - Containers](https://marketplace.v
 5. A new window will open once the image is build. The new window is the development environment within the Docker container.
 6. Once in the container on first build, all `npm` dependencies will be installed.
 7. When the `npm` dependencies are complete, Open a new terminal window and run `npm run dev`
-8. The application should be running on `localhost:3000`
+8. The application should be running on [http://localhost:3000](http://localhost:3000).
 
 ### Launch Existing Container
 
@@ -93,7 +93,16 @@ Document how unit testing is run and structured here...
 
 The following section will help troubleshoot some common scenarios you may face when working with the project.
 
-Document common issues here...
+### Changes are not showing in VS Code explorer inside docker container (left pane)
+
+If `git` is not showing changes to unstaged files on the explorer, then the repository might be identified as an `unsafe repository`. This is happening because the repository was originally cloned on the host machine, and in the process of building the containter, the `.git` folder was copied over to the docker container. To solve this, follow the steps below:
+
+1. Select the `Source Control` icon on the left pane.
+2. Press the `Manage Unsafe Repositories` as shownin the screenshot below.
+
+![UnsafeRepositories](assets/images/unsafe-repositories.png)
+
+3. Select the current workspace from the prompted list.
 
 ## Learn More
 
