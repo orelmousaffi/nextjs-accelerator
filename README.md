@@ -59,6 +59,12 @@ The repository is set up to utilize the [Dev - Containers](https://marketplace.v
 7. When the `npm` dependencies are complete, Open a new terminal window and run `npm run dev`
 8. The application should be running on [http://localhost:3000](http://localhost:3000).
 
+**Note:** Due to security restrictions found [here](https://github.com/microsoft/vscode-remote-release/issues/1042), the `postCommand` script is not able to automatically install all the recommended `VSCode` extensions through the bash script. As a result the following command needs to be executed after initial setup through the integrated terminal window inside the container:
+
+```bash
+source .devcontainer/install_extensions.sh
+```
+
 ### Launch Existing Container
 
 If you have already setup the Docker container previously, then the only requirement is to run `Dev Containers: Reopen in Container` command from the Command Palette. This will open the workspace in VS Code. From here you can continue working as if on the host machine.
